@@ -10,3 +10,41 @@
   margin: 8px;
   border-color: #3bbfce;
 }
+
+/* line 16, ../sass/main.scss */
+ul {
+  background-color: yellow;
+}
+/* line 18, ../sass/main.scss */
+ul li {
+  text-decoration: underline;
+}
+
+/* line 28, ../sass/main.scss */
+.rounded-top-left {
+  border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+}
+
+/* _rounded.scss */
+/* line 36, ../sass/main.scss */
+#navbar li {
+  border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+}
+
+/* line 37, ../sass/main.scss */
+#footer {
+  border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+}
+
+/* line 38, ../sass/main.scss */
+#sidebar {
+  border-top-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+}
