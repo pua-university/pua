@@ -17,27 +17,15 @@ q:before, q:after { content: ''; content: none; }
 
 table { border-collapse: collapse; border-spacing: 0; }
 
-ul.slider { position: relative; list-style: none; padding: 0; margin: 0; overflow: hidden; display: none; }
+input { border: 1px solid #797979; border-radius: 0; background-color: white; padding: 2px 7px; width: 175px; }
 
-li.slider-slide { position: absolute; display: none; }
+label { width: 170px; }
 
-ul.slider-controls { list-style: none; margin: 0; padding: 0; z-index: 9999; }
+button { cursor: pointer; border-radius: 0; border: 1px solid #797979; background-color: #e8e8e8; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e8e8), color-stop(100%, #c7c7c7)); background-image: -webkit-linear-gradient(top, #e8e8e8, #c7c7c7); background-image: -moz-linear-gradient(top, #e8e8e8, #c7c7c7); background-image: -ms-linear-gradient(top, #e8e8e8, #c7c7c7); background-image: -o-linear-gradient(top, #e8e8e8, #c7c7c7); background-image: linear-gradient(top, #e8e8e8, #c7c7c7); -webkit-box-shadow: inset 0 0 1px 1px #f7f7f7; -moz-box-shadow: inset 0 0 1px 1px #f7f7f7; box-shadow: inset 0 0 1px 1px #f7f7f7; }
 
-ul.slider-controls.v-centered li a { position: absolute; }
+button:hover { background-color: #e8e8e8; background-image: transparent; }
 
-ul.slider-controls.v-centered li.slider-next a { right: 0; }
-
-ul.slider-controls.v-centered li.slider-prev a { left: 0; }
-
-ol.slider-markers { list-style: none; padding: 0; margin: 0; width: 100%; }
-
-ol.slider-markers.h-centered { text-align: center; }
-
-ol.slider-markers li { display: inline; }
-
-ol.slider-markers li a { display: inline-block; }
-
-p.slider-caption { display: block; width: 96%; margin: 0; padding: 2%; position: absolute; bottom: 0; }
+button:active { background-color: #c7c7c7; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c7c7c7), color-stop(100%, #e8e8e8)); background-image: -webkit-linear-gradient(top, #c7c7c7, #e8e8e8); background-image: -moz-linear-gradient(top, #c7c7c7, #e8e8e8); background-image: -ms-linear-gradient(top, #c7c7c7, #e8e8e8); background-image: -o-linear-gradient(top, #c7c7c7, #e8e8e8); background-image: linear-gradient(top, #c7c7c7, #e8e8e8); }
 
 .newsCarousel ul li { list-style: none; display: block; padding-bottom: 1px; margin-bottom: 5px; }
 
@@ -54,16 +42,6 @@ p.slider-caption { display: block; width: 96%; margin: 0; padding: 2%; position:
 .partnersLogos .info { float: right; width: 190px; }
 
 .partnersLogos .info span.cat { display: block; font-size: 10px; color: #808080; }
-
-input { border: 1px solid #797979; border-radius: 0; background-color: white; padding: 2px 7px; width: 175px; }
-
-label { width: 170px; }
-
-button { cursor: pointer; border-radius: 0; border: 1px solid #797979; background-color: #e8e8e8; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e8e8), color-stop(100%, #c7c7c7)); background-image: -webkit-linear-gradient(top, #e8e8e8, #c7c7c7); background-image: -moz-linear-gradient(top, #e8e8e8, #c7c7c7); background-image: -ms-linear-gradient(top, #e8e8e8, #c7c7c7); background-image: -o-linear-gradient(top, #e8e8e8, #c7c7c7); background-image: linear-gradient(top, #e8e8e8, #c7c7c7); -webkit-box-shadow: inset 0 0 1px 1px #f7f7f7; -moz-box-shadow: inset 0 0 1px 1px #f7f7f7; box-shadow: inset 0 0 1px 1px #f7f7f7; }
-
-button:hover { background-color: #e8e8e8; background-image: transparent; }
-
-button:active { background-color: #c7c7c7; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c7c7c7), color-stop(100%, #e8e8e8)); background-image: -webkit-linear-gradient(top, #c7c7c7, #e8e8e8); background-image: -moz-linear-gradient(top, #c7c7c7, #e8e8e8); background-image: -ms-linear-gradient(top, #c7c7c7, #e8e8e8); background-image: -o-linear-gradient(top, #c7c7c7, #e8e8e8); background-image: linear-gradient(top, #c7c7c7, #e8e8e8); }
 
 /*global styles*/
 *, body { font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 12px; }
@@ -99,7 +77,7 @@ a:visited { color: #004443; }
 #topLogoSection .logo { background: url(../images/pua_sprite.png) 0 -24px no-repeat; width: 444px; height: 132px; display: block; top: 0; left: -100px; position: absolute; padding-left: 100px; }
 #topLogoSection .logo img { float: left; margin-right: 10px; margin-top: 10px; }
 #topLogoSection .logo h1 { color: white; font: 32px/122px TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; text-shadow: -1px -1px 0 #405229; float: left; }
-#topLogoSection .topNavigation { right: 0; position: absolute; top: 85px; }
+#topLogoSection .topNavigation { right: 0; position: absolute; top: 65px; }
 #topLogoSection .topNavigation ul li { float: left; padding: 10px 0; }
 #topLogoSection .topNavigation ul li a { color: #444444; padding: 0 6px; border-right: 1px solid #444444; float: left; line-height: 12px; }
 #topLogoSection .topNavigation ul li a:hover { color: white; }
@@ -119,3 +97,78 @@ a:visited { color: #004443; }
 #mainNavigation a { float: left; color: #004443; font-weight: 600; padding: 0 7px; line-height: 46px; border-left: 1px solid transparent; border-right: 1px solid transparent; }
 #mainNavigation a:hover { background-color: white; border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; }
 #mainNavigation a.current { background-color: white; border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; }
+
+/*homeslider*/
+ul.slider { position: relative; list-style: none; padding: 0; margin: 0; overflow: hidden; display: none; }
+
+li.slider-slide { position: absolute; display: none; }
+
+ul.slider-controls { list-style: none; margin: 0; padding: 0; z-index: 9999; }
+
+ul.slider-controls.v-centered li a { position: absolute; }
+
+ul.slider-controls.v-centered li.slider-next a { right: 0; }
+
+ul.slider-controls.v-centered li.slider-prev a { left: 0; }
+
+ol.slider-markers { list-style: none; padding: 0; margin: 0; position: absolute; right: 30px; left: auto !important; bottom: 20px; }
+
+ol.slider-markers.h-centered { text-align: center; }
+
+ol.slider-markers li { display: inline; float: left; margin: 0 5px; }
+
+ol.slider-markers li a { border-radius: 50%; background-color: #444444; opacity: 0.8; display: block; width: 22px; height: 22px; text-indent: -9999px; overflow: hidden; }
+
+ol.slider-markers li.active-marker a { background-color: #ff5f24; opacity: 0.8; }
+
+p.slider-caption { display: block; width: 96%; margin: 0; padding: 4% 2%; position: absolute; bottom: 0; background-color: rgba(255, 255, 255, 0.6); color: #004443; font-size: 22px; text-shadow: 1px 1px 0 #cacaca; }
+
+/*horizontal separator*/
+span.horizontalSep { display: block; text-indent: -9999px; overflow: hidden; width: 950px; height: 11px; background-image: url(../images/pua_sprite.png); background-position: 0 0; background-repeat: no-repeat; background-color: transparent; border: medium none; margin-top: 1px; margin-bottom: 20px; }
+
+/*news and services general styles*/
+.twoColumns { width: 470px; }
+
+.news { float: left; }
+
+.services { float: right; }
+
+h2.title { color: #ff5f24; font-size: 22px; font-weight: bold; text-transform: capitalize; border-bottom: 1px solid #bec3b4; padding: 10px 0; margin-bottom: 20px; }
+h2.title.home { color: #004443; }
+
+h2.subTitle { font-size: 18px; color: #444444; width: 100%; margin-bottom: 5px; text-transform: capitalize; }
+
+.smallText { color: #909090; }
+
+/*news*/
+.newsCarousel ul li { border-bottom: 1px solid #dfe0d7; margin: 0 0 10px; }
+.newsCarousel ul li figure, .newsCarousel ul li article { float: left; }
+.newsCarousel ul li a { float: left; margin-bottom: 10px; }
+.newsCarousel ul li a:hover { text-decoration: underline; color: #ff5f24; }
+.newsCarousel ul li a:hover figure { border-color: #ff5f24; }
+.newsCarousel ul li a:hover h2 { color: #ff5f24; }
+.newsCarousel ul li figure { margin-right: 10px; width: 26%; height: 95px; text-align: center; border: 1px solid #797979; padding: 3px; background-color: white; }
+.newsCarousel ul li figure img { width: 100%; height: 100%; }
+.newsCarousel ul li article { width: 68%; }
+.newsCarousel ul li article p { height: 58px; margin-top: 10px; overflow: auto; }
+
+a.viewAll { color: #ff5f24; float: right; font-weight: bold; line-height: 8px; width: 100%; border-bottom: 5px solid #dfe0d7; text-align: right; padding: 5px 0; }
+a.viewAll .icon { width: 0px; height: 0px; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid #ff5f24; float: right; margin-left: 4px; }
+
+/*services*/
+.services { /*animated background on hover*/ }
+.services ul li { width: 146.66667px; float: left; position: relative; height: 275px; margin-right: 10px; }
+.services ul li h3 { color: #444444; font-size: 18px; font-weight: bold; width: 100%; text-align: center; height: 50px; }
+.services ul li span.icon { margin: 0 auto; }
+.services ul li.mediaGallery span.icon { display: block; text-indent: -9999px; overflow: hidden; width: 90px; height: 69px; background-image: url(../images/pua_sprite.png); background-position: -697px -20px; background-repeat: no-repeat; background-color: transparent; border: medium none; margin-top: 8px; }
+.services ul li.internationalActivities span.icon { display: block; text-indent: -9999px; overflow: hidden; width: 74px; height: 74px; background-image: url(../images/pua_sprite.png); background-position: -790px -20px; background-repeat: no-repeat; background-color: transparent; border: medium none; }
+.services ul li.academicRules span.icon { display: block; text-indent: -9999px; overflow: hidden; width: 68px; height: 78px; background-image: url(../images/pua_sprite.png); background-position: -866px -20px; background-repeat: no-repeat; background-color: transparent; border: medium none; }
+.services ul li a { height: 100%; float: left; }
+.services ul li a:hover { text-decoration: none; }
+.services ul li p { margin: 20px 5px; }
+.services ul li h3:before { content: ""; background-color: #dfe0d7; position: absolute; display: block; width: 100%; height: 5px; bottom: 0; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; z-index: -1; opacity: 0.9; }
+.services ul li:hover { cursor: pointer; }
+.services ul li:hover h3:before { height: 230px; }
+
+/*partners*/
+.ourPartners { float: left; width: 100%; }

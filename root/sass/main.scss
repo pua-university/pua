@@ -1,12 +1,15 @@
 @import "reset";
-@import "homeslider";
-@import "homecarousels";
 @import "formsstyles";
+@import "homecarousels";
 
 $orange: #ff5f24;
 $textgrey: #444;
 $green: #004443;
 $lightgrey: #909090;
+$titlebordercolor: #bec3b4;
+$subbordercolor: #dfe0d7;
+$formborder: #797979;
+
 
 /*global styles*/
 *, body {font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 12px;}
@@ -31,6 +34,11 @@ a {
 }
 @mixin roundcorners($radius: 5px) {
   border-radius: $radius;
+}
+@mixin transtion($time: 1s){
+  -webkit-transition: all $time ease-in-out;  
+  -moz-transition: all $time ease-in-out;  
+  -o-transition: all $time ease-in-out;
 }
 
 /*containers*/
@@ -81,7 +89,7 @@ a {
     h1 {color: white; font: 32px/122px TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; text-shadow:-1px -1px 0 #405229; float: left;}
   }
   .topNavigation {
-    right: 0; position: absolute; top: 85px;
+    right: 0; position: absolute; top: 65px;
     ul {}
     ul li {float: left; padding: 10px 0;}    
     ul li a {color: $textgrey; padding: 0 6px; border-right: 1px solid $textgrey; float: left; line-height: 12px;
@@ -110,7 +118,71 @@ a {
   &.current {background-color:white; border-left:1px solid #cccccc; border-right:1px solid #cccccc; }
  } 
 }
- 
+
+
+/*homeslider*/ 
+@import "homeslider";
+
+/*horizontal separator*/
+span.horizontalSep {@include icon(950px, 11px, 0 0); margin-top: 1px; margin-bottom: 20px;}
+
+
+/*news and services general styles*/
+.twoColumns {width: 470px;}
+.news {float: left;}
+.services {float: right;}
+h2.title {
+  color: $orange; font-size: 22px; font-weight: bold; text-transform: capitalize; border-bottom: 1px solid $titlebordercolor; padding: 10px 0; margin-bottom: 20px;
+  &.home {color:$green;}
+}
+h2.subTitle {font-size: 18px; color: $textgrey; width: 100%; margin-bottom: 5px; text-transform: capitalize; }
+.smallText {color:$lightgrey;}
+
+/*news*/
+.newsCarousel{
+  ul li {border-bottom: 1px solid $subbordercolor; margin: 0 0 10px;}
+  ul li figure, ul li article {float: left; }
+  ul li a {float: left; margin-bottom: 10px; 
+    &:hover{ text-decoration:underline; color: $orange;
+      figure {border-color: $orange;}
+      h2 {color: $orange;}
+    }
+  }
+  ul li figure {margin-right: 10px;width:26%; height:95px; text-align: center; border: 1px solid $formborder; padding: 3px; background-color: white;}
+  ul li figure img {width: 100%; height: 100%;}
+  ul li article {width: 68%}
+  ul li article p {height:58px; margin-top: 10px;overflow: auto;}
+}
+
+a.viewAll {color: $orange; float: right; font-weight: bold; line-height: 8px; width: 100%; border-bottom: 5px solid $subbordercolor; text-align: right;padding: 5px 0;
+  .icon {width: 0px;height: 0px;border-top: 5px solid transparent;border-bottom: 5px solid transparent;border-left: 5px solid $orange; float: right; margin-left: 4px;}
+}
+
+/*services*/
+.services {
+  $servwidth: 470px;  
+  ul li {width: $servwidth/3 - 10; float: left; position: relative; height: 275px; margin-right: 10px;}
+  ul li h3 {color: $textgrey; font-size: 18px; font-weight: bold; width: 100%; text-align: center; height: 50px;}
+  ul li span.icon {margin: 0 auto;}
+  ul li.mediaGallery span.icon {@include icon(90px, 69px, -697px -20px); margin-top: 8px;}
+  ul li.internationalActivities span.icon {@include icon(74px, 74px, -790px -20px);}
+  ul li.academicRules span.icon {@include icon(68px, 78px, -866px -20px);}
+  ul li a {height: 100%; float: left;}
+  ul li a:hover {text-decoration: none;}
+  ul li p {margin: 20px 5px; }
+  /*animated background on hover*/
+  ul li h3:before {
+    content: ""; background-color: $subbordercolor; position: absolute; display: block; width:100%; height: 5px; bottom: 0; @include transtion(0.5s); z-index: -1; opacity: 0.9;
+  }
+  ul li:hover {
+    cursor: pointer;
+    h3:before {height:230px;}
+  }
+}
+
+
+/*partners*/
+.ourPartners {float: left; width: 100%;}
 
 
 
