@@ -335,7 +335,7 @@ a.viewAll {color: $orange; float: right; font-weight: bold; line-height: 8px; wi
 
 /*news rotator*/
 #newsRotator {
-  background-color: #e6e9db; height: 28px; line-height: 28px;
+  background-color: #e6e9db; height: 28px; line-height: 28px; overflow: hidden;
   h2, span, p {font-size: 12px; float: left; display: inline; width: auto;}
   h2, span {color: $orange; margin-right: 5px;}
   p {color:$textgrey;}
@@ -370,4 +370,25 @@ a.viewAll {color: $orange; float: right; font-weight: bold; line-height: 8px; wi
     &.current, &:hover {background-color: #ffd7bf; border-left-color: #ffac7a;}
   }
 }
+
+/*rtl fixes*/
+[dir="rtl"] #innerServices h1,
+[dir="rtl"] #innerServices a,
+[dir="rtl"] #innerServices span,
+[dir="rtl"] #newsRotator h2,
+[dir="rtl"] #newsRotator span,
+[dir="rtl"] #newsRotator p,
+[dir="rtl"] #sideNavigation,
+[dir="rtl"] #sideNavigation .facultyLinks {float: right;}
+
+[dir="rtl"] #innerServices .icon { margin-left: 5px; margin-right: 0;}
+[dir="rtl"] #newsRotator h2,
+[dir="rtl"] #newsRotator span {    margin-right: 5px; margin-left: 0;}
+[dir="rtl"] #innerServices a {border-left: medium none; border-right: 1px solid #9CA57A;}
+[dir="rtl"] #sideNavigation .allFaculties > li.current:after {left: 10px; right: auto;}
+[dir="rtl"] #sideNavigation .allFaculties > li {border-left:medium none; border-right:10px solid #012C2B;}
+[dir="rtl"] #sideNavigation .facultyLinks {margin-left: 0; margin-right: -20px;}
+[dir="rtl"] #sideNavigation .facultyLinks li {border-left:medium none; border-right:10px solid #C4D4D4; padding:6px 10px 6px 0; }
+[dir="rtl"] #sideNavigation .facultyLinks li:hover,
+[dir="rtl"] #sideNavigation .facultyLinks li.current {border-right:10px solid #ffac7a;}
 
