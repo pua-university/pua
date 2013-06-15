@@ -1,38 +1,15 @@
-$blue: #3bbfce;
-$margin: 16px;
+@import "reset";
+@import "homeslider";
+@import "newscarousel";
 
-.content-navigation {
-  border-color: $blue;
-  color:
-    darken($blue, 9%);
-}
+$link-color: #444;
+$link-hover: orange;
 
-.border {
-  padding: $margin / 2;
-  margin: $margin / 2;
-  border-color: $blue;
-}
-
-ul{
-	background-color: yellow;
-	li{
-		text-decoration: underline;
-	}
+a {
+  color: $link-color;
+  &:hover {color:$link-hover;}
+  img { border-color:#cacaca;}
+  &:hover img {border-color:$link-hover;}
 }
 
 
-$vert: top;
-$horz: left;
-$radius: 10px;
-
-.rounded-#{$vert}-#{$horz} {
-  border-#{$vert}-#{$horz}-radius: $radius;
-  -moz-border-radius-#{$vert}#{$horz}: $radius;
-  -webkit-border-#{$vert}-#{$horz}-radius: $radius;
-}
-
-@import "rounded";
-
-#navbar li { @include rounded(top, left); }
-#footer { @include rounded(top, left, 5px); }
-#sidebar { @include rounded(top, left, 8px); }
