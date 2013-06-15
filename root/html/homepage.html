@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../stylesheets/main.css">
   </head>
 
-  <body>
+  <body dir="rtl"> <!-- NOTE: add attribute "dir" with value "rtl" for Arabic version -->
     <div class="fullWidthWrapper" id="topLinks">
 
       <div class="wrapper_960">
@@ -19,7 +19,9 @@
           <a href="#" title="sitemap">Sitemap</a>
           <a href="#" title="mail">Mail</a>
           <a href="#" title="faq">FAQ</a>
-          <a href="#" title="لغة عربية" class="language arabic"><span class="icon">flag</span>النسخة العربية</a>
+          <a href="#" title="لغة عربية" class="language arabic"> <!-- NOTE: or use class "english" instead of "arabic" -->
+            <span class="icon">flag</span>النسخة العربية
+          </a>
         </div>
         <div class="search">
           <form>
@@ -51,7 +53,7 @@
                   <label for="studentID">Student ID Number</label>
                   <input type="text" id="studentID" placeholder="student ID" />
                   <label for="studentPassword">Password</label>
-                  <input type="password" id="studentPassword" />
+                  <input type="password" id="studentPassword" placeholder="your password" />
                   <button type="submit">Login</button>
                   <a href="#" title="request password">Request Password</a>
                   <a href="javascript:void(0);" class="L-cancelLogin cancel">cancel</a>

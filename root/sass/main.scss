@@ -19,6 +19,7 @@ a {
   color: $orange;
   &:hover {}
   &:visited {}
+  &:active {outline: medium none;}
 }
 
 .clearfix:after {
@@ -80,7 +81,8 @@ a {
     &:hover {text-decoration:none; color: $orange;}
   }
   a .icon {float: right; margin-left: 5px; margin-top: 2px;}
-  a.arabic .icon {    @include icon(14px, 12px, -938px -77px);  }
+  a.arabic .icon {    @include icon(14px, 12px, -938px -77px);}
+  a.english .icon { @include icon(14px, 12px, -938px -94px); }
 }
 .topSitemapLinks {float: left;}
 .search {
@@ -243,10 +245,62 @@ a.viewAll {color: $orange; float: right; font-weight: bold; line-height: 8px; wi
   }
 }
 
-
-
 /*copyright*/
 #footer{
   .copyRight {width:100%; display: block; height: 30px; text-align: center; color: white; background-color: $orange; overflow: hidden; line-height: 30px;}
-  .copyRight a {font-weight: bold;}
+  .copyRight a {font-weight: bold; color: $green;}
 }
+
+
+/*rtl fixes*/
+[dir="rtl"] .topSitemapLinks,
+[dir="rtl"] #topLinks a,
+[dir="rtl"] #topLogoSection .topNavigation ul li,
+[dir="rtl"] #topLogoSection .topNavigation ul li span.login,
+[dir="rtl"] #topLogoSection .logo img,
+[dir="rtl"] #topLogoSection .logo h1,
+[dir="rtl"] #mainNavigation a,
+[dir="rtl"] .news,
+[dir="rtl"] .newsCarousel ul li figure,
+[dir="rtl"] .newsCarousel ul li article,
+[dir="rtl"] .services ul li,
+[dir="rtl"] #footer .footerList,
+[dir="rtl"] #footer .puaSocialProfile ul li .icon,
+[dir="rtl"] #footer .puaSocialProfile ul li a,
+[dir="rtl"] #topLogoSection .topNavigation ul li .studentsLogin label,
+[dir="rtl"] #topLogoSection .topNavigation ul li .studentsLogin input,
+[dir="rtl"] #topLogoSection .topNavigation ul li .studentsLogin a {float: right;}
+
+[dir="rtl"] .search,
+[dir="rtl"] .services,
+[dir="rtl"] a.viewAll,
+[dir="rtl"] a.viewAll .icon,
+[dir="rtl"] #footer .puaSocialProfile,
+[dir="rtl"] #topLogoSection .topNavigation ul li .studentsLogin button {float: left;}
+
+[dir="rtl"] #topLogoSection .topNavigation ul li .studentsLogin {right: auto; left: 0;}
+[dir="rtl"] .search button.icon {right: auto; left: 5px;}
+[dir="rtl"] #topLogoSection .logo {right: -100px; left: auto; padding-left:0; padding-right: 100px;}
+[dir="rtl"] #topLogoSection .logo img { margin-left:10px; margin-right:0;}
+[dir="rtl"] #topLogoSection .topNavigation {left: 0; right: auto;}
+[dir="rtl"] #topLogoSection .topNavigation ul li a {    border-left: 1px solid #444444; border-right:medium none;}
+[dir="rtl"] #topLogoSection .topNavigation ul li:last-child a {border-left:medium none;}
+[dir="rtl"] #topLogoSection .topNavigation ul li span.login {margin: -4px 0 0 5px;}
+[dir="rtl"] ol.slider-markers {right: auto; left:30px !important;}
+[dir="rtl"] .newsCarousel ul li figure {margin-right:0; margin-left: 10px;}
+[dir="rtl"] a.viewAll {text-align: left;}
+[dir="rtl"] a.viewAll .icon {margin-left:0; margin-right:4px;border-left:medium none; border-right:5px solid #FF5F24; }
+[dir="rtl"] #footer .followUs {left: 12px; right: auto;}
+[dir="rtl"] #footer .puaSocialProfile ul {margin-right: 20%; margin-left: 0;}
+[dir="rtl"] #footer ul li {padding-left:0; padding-right: 20px; background: url(../images/ar-arrow.png) right center no-repeat;}
+[dir="rtl"] #footer .puaSocialProfile {width: 184px;}
+[dir="rtl"] #footer .footerList {margin-right: 25px; margin-left: 0;}
+[dir="rtl"] #footer ul li.title, 
+[dir="rtl"] #footer ul li.title a {padding: 0; background: transparent none;}
+[dir="rtl"] #footer .puaSocialProfile ul li {background: transparent none;}
+
+[dir="rtl"] .ourPartners .partnersLogos {direction: ltr;margin-right:40px; margin-left: 0;}
+
+
+
+
