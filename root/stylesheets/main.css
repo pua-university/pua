@@ -154,6 +154,7 @@ h2.subTitle { font-size: 18px; color: #444444; width: 100%; margin-bottom: 5px; 
 .newsCarousel ul li { border-bottom: 1px solid #dfe0d7; margin: 0 0 10px; }
 .newsCarousel ul li figure, .newsCarousel ul li article { float: left; }
 .newsCarousel ul li a { float: left; margin-bottom: 10px; }
+.newsCarousel ul li a h2.subTitle { height: 18px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .newsCarousel ul li a:hover { color: #ff5f24; }
 .newsCarousel ul li a:hover figure { border-color: #ff5f24; }
 .newsCarousel ul li a:hover h2, .newsCarousel ul li a:hover p { color: #ff5f24; }

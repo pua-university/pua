@@ -159,7 +159,9 @@ h2.subTitle {font-size: 18px; color: $textgrey; width: 100%; margin-bottom: 5px;
 .newsCarousel{
   ul li {border-bottom: 1px solid $subbordercolor; margin: 0 0 10px;}
   ul li figure, ul li article {float: left; }
-  ul li a {float: left; margin-bottom: 10px; 
+  ul li a {
+    float: left; margin-bottom: 10px;
+    h2.subTitle {height: 18px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
     &:hover{ 
       color: $orange;
       figure {border-color: $orange;}
