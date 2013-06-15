@@ -1,15 +1,41 @@
 @import "reset";
 @import "homeslider";
-@import "newscarousel";
+@import "homecarousels";
+@import "formsstyles";
 
-$link-color: #444;
-$link-hover: orange;
+$orange: #ff5f24;
+$grey: #444;
+$green: #004443;
+$grey: #909090;
 
+*, body {font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 12px;}
 a {
-  color: $link-color;
-  &:hover {color:$link-hover;}
-  img { border-color:#cacaca;}
-  &:hover img {border-color:$link-hover;}
+  text-decoration: none; 
+  color: $orange;
+  &:hover {text-decoration:underline;}
+  &:visited {color: $green;}
 }
 
+/*containers*/
+.fullWidthWrapper {width: 100%;}
+.wrapper_960 {width: 960px; margin: 0 auto;}
+
+/*topLinksWrapper*/
+.topLinksWrapper {
+  background-color: $orange; height: 35px; line-height: 35px; 
+  a {
+    color: #fff;
+    margin-right: 12px;
+  }
+  a.language {
+    color: $grey;
+    background-color: #fff;
+    border: 1px solid $grey;
+    padding:2px 7px;
+
+    &:hover {text-decoration:none; color: $orange;}
+  }
+}
+.topSitemapLinks {float: left;}
+.search {float: right;}
 

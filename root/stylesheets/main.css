@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 6, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_reset.scss */
+/* line 6, ../sass/_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -13,45 +13,45 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 16, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_reset.scss */
+/* line 16, ../sass/_reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 19, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_reset.scss */
+/* line 19, ../sass/_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_reset.scss */
+/* line 22, ../sass/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 25, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_reset.scss */
+/* line 25, ../sass/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 29, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_reset.scss */
+/* line 29, ../sass/_reset.scss */
 blockquote:before, blockquote:after {
   content: '';
   content: none;
 }
 
-/* line 34, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_reset.scss */
+/* line 34, ../sass/_reset.scss */
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 38, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_reset.scss */
+/* line 38, ../sass/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 1, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_homeslider.scss */
+/* line 1, ../sass/_homeslider.scss */
 ul.slider {
   position: relative;
   list-style: none;
@@ -61,13 +61,13 @@ ul.slider {
   display: none;
 }
 
-/* line 2, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_homeslider.scss */
+/* line 2, ../sass/_homeslider.scss */
 li.slider-slide {
   position: absolute;
   display: none;
 }
 
-/* line 3, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_homeslider.scss */
+/* line 3, ../sass/_homeslider.scss */
 ul.slider-controls {
   list-style: none;
   margin: 0;
@@ -75,22 +75,22 @@ ul.slider-controls {
   z-index: 9999;
 }
 
-/* line 4, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_homeslider.scss */
+/* line 4, ../sass/_homeslider.scss */
 ul.slider-controls.v-centered li a {
   position: absolute;
 }
 
-/* line 5, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_homeslider.scss */
+/* line 5, ../sass/_homeslider.scss */
 ul.slider-controls.v-centered li.slider-next a {
   right: 0;
 }
 
-/* line 6, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_homeslider.scss */
+/* line 6, ../sass/_homeslider.scss */
 ul.slider-controls.v-centered li.slider-prev a {
   left: 0;
 }
 
-/* line 7, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_homeslider.scss */
+/* line 7, ../sass/_homeslider.scss */
 ol.slider-markers {
   list-style: none;
   padding: 0;
@@ -98,22 +98,22 @@ ol.slider-markers {
   width: 100%;
 }
 
-/* line 8, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_homeslider.scss */
+/* line 8, ../sass/_homeslider.scss */
 ol.slider-markers.h-centered {
   text-align: center;
 }
 
-/* line 9, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_homeslider.scss */
+/* line 9, ../sass/_homeslider.scss */
 ol.slider-markers li {
   display: inline;
 }
 
-/* line 10, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_homeslider.scss */
+/* line 10, ../sass/_homeslider.scss */
 ol.slider-markers li a {
   display: inline-block;
 }
 
-/* line 11, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_homeslider.scss */
+/* line 11, ../sass/_homeslider.scss */
 p.slider-caption {
   display: block;
   width: 96%;
@@ -123,7 +123,7 @@ p.slider-caption {
   bottom: 0;
 }
 
-/* line 2, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_newscarousel.scss */
+/* line 2, ../sass/_homecarousels.scss */
 .newsCarousel ul li {
   list-style: none;
   display: block;
@@ -131,26 +131,26 @@ p.slider-caption {
   margin-bottom: 5px;
 }
 
-/* line 3, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_newscarousel.scss */
+/* line 3, ../sass/_homecarousels.scss */
 .newsCarousel .thumbnail {
   float: left;
   width: 110px;
 }
 
-/* line 4, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_newscarousel.scss */
+/* line 4, ../sass/_homecarousels.scss */
 .newsCarousel .info {
   float: right;
   width: 190px;
 }
 
-/* line 5, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_newscarousel.scss */
+/* line 5, ../sass/_homecarousels.scss */
 .newsCarousel .info span.cat {
   display: block;
   font-size: 10px;
   color: #808080;
 }
 
-/* line 8, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_newscarousel.scss */
+/* line 8, ../sass/_homecarousels.scss */
 .partnersLogos ul li {
   list-style: none;
   display: block;
@@ -158,38 +158,96 @@ p.slider-caption {
   margin-bottom: 5px;
 }
 
-/* line 9, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_newscarousel.scss */
+/* line 9, ../sass/_homecarousels.scss */
 .partnersLogos .thumbnail {
   float: left;
   width: 110px;
 }
 
-/* line 10, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_newscarousel.scss */
+/* line 10, ../sass/_homecarousels.scss */
 .partnersLogos .info {
   float: right;
   width: 190px;
 }
 
-/* line 11, /Volumes/Macintosh HD 2/Work/Pharos/pua/root/sass/_newscarousel.scss */
+/* line 11, ../sass/_homecarousels.scss */
 .partnersLogos .info span.cat {
   display: block;
   font-size: 10px;
   color: #808080;
 }
 
-/* line 8, ../sass/main.scss */
-a {
-  color: #444444;
+/* line 1, ../sass/_formsstyles.scss */
+input {
+  border: 1px solid #797979;
+  border-radius: 0;
+  background-color: white;
+  padding: 2px 7px;
 }
-/* line 10, ../sass/main.scss */
-a:hover {
-  color: orange;
-}
+
 /* line 11, ../sass/main.scss */
-a img {
-  border-color: #cacaca;
+*, body {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 12px;
 }
+
 /* line 12, ../sass/main.scss */
-a:hover img {
-  border-color: orange;
+a {
+  text-decoration: none;
+  color: #ff5f24;
+}
+/* line 15, ../sass/main.scss */
+a:hover {
+  text-decoration: underline;
+}
+/* line 16, ../sass/main.scss */
+a:visited {
+  color: #004443;
+}
+
+/*containers*/
+/* line 20, ../sass/main.scss */
+.fullWidthWrapper {
+  width: 100%;
+}
+
+/* line 21, ../sass/main.scss */
+.wrapper_960 {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/*topLinksWrapper*/
+/* line 24, ../sass/main.scss */
+.topLinksWrapper {
+  background-color: #ff5f24;
+  height: 35px;
+  line-height: 35px;
+}
+/* line 26, ../sass/main.scss */
+.topLinksWrapper a {
+  color: #fff;
+  margin-right: 12px;
+}
+/* line 30, ../sass/main.scss */
+.topLinksWrapper a.language {
+  color: #909090;
+  background-color: #fff;
+  border: 1px solid #909090;
+  padding: 2px 7px;
+}
+/* line 36, ../sass/main.scss */
+.topLinksWrapper a.language:hover {
+  text-decoration: none;
+  color: #ff5f24;
+}
+
+/* line 39, ../sass/main.scss */
+.topSitemapLinks {
+  float: left;
+}
+
+/* line 40, ../sass/main.scss */
+.search {
+  float: right;
 }
