@@ -17,8 +17,8 @@ body { background-color: #fafcef;}
 a {
   text-decoration: none; 
   color: $orange;
-  &:hover {text-decoration:underline;}
-  &:visited {color: $green;}
+  &:hover {}
+  &:visited {}
 }
 
 .clearfix:after {
@@ -158,7 +158,7 @@ h2.subTitle {font-size: 18px; color: $textgrey; width: 100%; margin-bottom: 5px;
   ul li {border-bottom: 1px solid $subbordercolor; margin: 0 0 10px;}
   ul li figure, ul li article {float: left; }
   ul li a {float: left; margin-bottom: 10px; 
-    &:hover{ text-decoration:underline; color: $orange;
+    &:hover{ color: $orange;
       figure {border-color: $orange;}
       h2 {color: $orange;}
     }

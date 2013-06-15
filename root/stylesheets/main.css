@@ -49,8 +49,6 @@ button:active { background-color: #c7c7c7; background-image: -webkit-gradient(li
 body { background-color: #fafcef; }
 
 a { text-decoration: none; color: #ff5f24; }
-a:hover { text-decoration: underline; }
-a:visited { color: #004443; }
 
 .clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 
@@ -154,7 +152,7 @@ h2.subTitle { font-size: 18px; color: #444444; width: 100%; margin-bottom: 5px; 
 .newsCarousel ul li { border-bottom: 1px solid #dfe0d7; margin: 0 0 10px; }
 .newsCarousel ul li figure, .newsCarousel ul li article { float: left; }
 .newsCarousel ul li a { float: left; margin-bottom: 10px; }
-.newsCarousel ul li a:hover { text-decoration: underline; color: #ff5f24; }
+.newsCarousel ul li a:hover { color: #ff5f24; }
 .newsCarousel ul li a:hover figure { border-color: #ff5f24; }
 .newsCarousel ul li a:hover h2 { color: #ff5f24; }
 .newsCarousel ul li figure { margin-right: 10px; width: 26%; height: 95px; text-align: center; border: 1px solid #797979; padding: 3px; background-color: white; }
