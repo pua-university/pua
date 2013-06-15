@@ -1,1 +1,21 @@
-input {border:1px solid #797979; border-radius:0; background-color:white; padding:2px 7px;}
+input {border:1px solid #797979; border-radius:0; background-color:white; padding:2px 7px; width:175px;}
+label {width:170px;}
+button { cursor:pointer; border-radius:0;  border:1px solid #797979; 
+background-color: #e8e8e8;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e8e8), color-stop(100%, #c7c7c7));
+background-image: -webkit-linear-gradient(top, #e8e8e8, #c7c7c7);
+background-image: -moz-linear-gradient(top, #e8e8e8, #c7c7c7);
+background-image: -ms-linear-gradient(top, #e8e8e8, #c7c7c7);
+background-image: -o-linear-gradient(top, #e8e8e8, #c7c7c7);
+background-image: linear-gradient(top, #e8e8e8, #c7c7c7); 
+-webkit-box-shadow: inset 0 0 1px 1px #f7f7f7; 
+-moz-box-shadow: inset 0 0 1px 1px #f7f7f7;  
+box-shadow: inset 0 0 1px 1px #f7f7f7;}
+button:hover { background-color:#e8e8e8; background-image:transparent;}
+button:active {background-color: #c7c7c7;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c7c7c7), color-stop(100%, #e8e8e8));
+background-image: -webkit-linear-gradient(top, #c7c7c7, #e8e8e8);
+background-image: -moz-linear-gradient(top, #c7c7c7, #e8e8e8);
+background-image: -ms-linear-gradient(top, #c7c7c7, #e8e8e8);
+background-image: -o-linear-gradient(top, #c7c7c7, #e8e8e8);
+background-image: linear-gradient(top, #c7c7c7, #e8e8e8); }

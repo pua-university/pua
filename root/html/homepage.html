@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <div class="fullWidthWrapper topLinksWrapper">
+    <div class="fullWidthWrapper" id="topLinks">
 
       <div class="wrapper_960">
         <div class="topSitemapLinks">
@@ -19,7 +19,7 @@
           <a href="#" title="sitemap">Sitemap</a>
           <a href="#" title="mail">Mail</a>
           <a href="#" title="faq">FAQ</a>
-          <a href="#" title="لغة عربية" class="language">النسخة العربية</a>
+          <a href="#" title="لغة عربية" class="language arabic"><span class="icon">flag</span>النسخة العربية</a>
         </div>
         <div class="search">
           <form>
@@ -27,14 +27,14 @@
             <button type="submit" class="icon">Search</button>
           </form>
         </div>
-      </div> <!-- /end .topLinksWrapper -->
+      </div> <!-- /end .topLinks -->
 
    </div> <!-- /end .fullWidthWrapper -->
 
-    <div class="fullWidthWrapper">
-      <div class="wrapper_960 logoWrapper">
+    <div class="fullWidthWrapper greenBg">
+      <div class="wrapper_960" id="topLogoSection">
         <div class="logo">
-          <a href="#" title="Pharos University"><img src="../images/pualogo.png" /></a>
+          <a href="#" title="Pharos University"><img src="../images/pua-logo.png" /></a>
           <h1>Pharos University</h1>
         </div>
         <div class="topNavigation">
@@ -45,8 +45,7 @@
             <li><a href="#" title="news">news</a></li>
             <li><a href="#" title="contact pua">contact PUA</a></li>
             <li>
-              <span class="icon login">login lock</span>
-              <a href="javascript:void(0);" title="students login">students login</a>
+              <a href="javascript:void(0);" title="students login" class="L-studentsLoginButton"><span class="icon login">login lock</span>students login</a>
               <div class="studentsLogin">
                 <form>
                   <label for="studentID">Student ID Number</label>
@@ -55,36 +54,34 @@
                   <input type="password" id="studentPassword" />
                   <button type="submit">Login</button>
                   <a href="#" title="request password">Request Password</a>
+                  <a href="javascript:void(0);" class="L-cancelLogin cancel">cancel</a>
                 </form>
               </div>
             </li>
           </ul>
         </div> <!-- /end .topNavigation -->
-      </div> <!-- /end .logoWrapper -->
+      </div> <!-- /end #topLogoSection -->
 
-      <div class="wrapper_960 mainNavigation">
-        <div>
+      <div class="wrapper_960" id="mainNavigation">
           <a href="#" title="about PUA">About PUA</a>
           <a href="#" title="Faculties">Faculties</a>
           <a href="#" title="Faculties">Electronic Libraries</a>
-          <a href="#" title="Students Affairs">Students Affairs</a>
+          <a href="#" class="current" title="Students Affairs">Students Affairs</a>
           <a href="#" title="Language Center">Language Center</a>
           <a href="#" title="International Cooperation">International Cooperation</a>
           <a href="#" title="Quality Assurance">Quality Assurance</a>
           <a href="#" title="Community Services">Community Services</a>
-        </div>
+      </div> <!-- /end #mainNavigation -->
 
-        <div id="homeSlider">
-          <ul class="slider">
-            <li><img src="http://basic-slider.com/img/banner03.jpg" title="Automatically generated caption"></li>
-            <li><img src="http://basic-slider.com/img/banner02.jpg" title="Automatically generated caption"></li>
-            <li><img src="http://basic-slider.com/img/banner03.jpg" title="Automatically generated caption"></li>
-          </ul>
-        </div>
+      <div class="wrapper_960" id="homeSlider">
+        <ul class="slider">
+          <li><img src="http://basic-slider.com/img/banner03.jpg" title="Automatically generated caption"></li>
+          <li><img src="http://basic-slider.com/img/banner02.jpg" title="Automatically generated caption"></li>
+          <li><img src="http://basic-slider.com/img/banner03.jpg" title="Automatically generated caption"></li>
+        </ul>
+      </div>
 
-      </div> <!-- /end .mainNavigation -->
-
-      <div class="wrapper_960 pageContent">
+      <div class="wrapper_960" id="pageContent">
         <div class="twoColumns news">
           <h2 class="title home">recent news</h2>
           <div class="newsCarousel">
@@ -146,7 +143,7 @@
           </ul>
         </div> <!-- /end .services -->
 
-        <div class="oneColumn ourPartners greyWrapper">
+        <div class="ourPartners greyWrapper">
           <h2 class="title"></h2>
           <div class="partnersLogos">
             <ul>
@@ -259,7 +256,8 @@
           height      : 320,
           width       : 960,
           responsive  : true,
-          hoverpause  : true
+          hoverpause  : true,
+          showcontrols: false
         });
 
       });
@@ -287,6 +285,18 @@
           btnPrev: ".prev"
         });
       });
+
+      //open and close students login form
+      $('.studentsLogin').hide();
+      $('.L-studentsLoginButton').on('click', function(event){
+        $('.studentsLogin').toggle();
+        $(this).parent('li').toggleClass("active");
+      })
+      $('.L-cancelLogin').on('click', function(event){
+        $(this).parents('.studentsLogin').hide();
+        $(this).parents('li').removeClass('active');
+      })
+
     </script>
   
   </body>

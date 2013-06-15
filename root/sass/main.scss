@@ -4,38 +4,114 @@
 @import "formsstyles";
 
 $orange: #ff5f24;
-$grey: #444;
+$textgrey: #444;
 $green: #004443;
-$grey: #909090;
+$lightgrey: #909090;
 
+/*global styles*/
 *, body {font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 12px;}
+body { background-color: #fafcef;}
 a {
   text-decoration: none; 
   color: $orange;
   &:hover {text-decoration:underline;}
   &:visited {color: $green;}
 }
+@mixin icon($width, $height, $bgposition) {
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: $width;
+  height: $height;
+  background-image: url(../images/pua_sprite.png);
+  background-position: $bgposition;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: medium none;
+}
+@mixin roundcorners($radius: 5px) {
+  border-radius: $radius;
+}
 
 /*containers*/
 .fullWidthWrapper {width: 100%;}
 .wrapper_960 {width: 960px; margin: 0 auto;}
 
-/*topLinksWrapper*/
-.topLinksWrapper {
+/*topLinks*/
+#topLinks {
   background-color: $orange; height: 35px; line-height: 35px; 
   a {
     color: #fff;
     margin-right: 12px;
+    float: left;
+    line-height: 35px;
   }
   a.language {
-    color: $grey;
+    color: $textgrey;
     background-color: #fff;
-    border: 1px solid $grey;
-    padding:2px 7px;
+    border: 1px solid $lightgrey;
+    line-height: 16px;
+    padding: 2px 7px;
+    margin-top: 6px; 
 
     &:hover {text-decoration:none; color: $orange;}
   }
+  a .icon {float: right; margin-left: 5px; margin-top: 2px;}
+  a.arabic .icon {    @include icon(14px, 12px, -938px -77px);  }
 }
 .topSitemapLinks {float: left;}
-.search {float: right;}
+.search {
+  float: right;
+  position: relative;
+  button.icon {
+    @include icon(14px,15px,-940px -53px);
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+}
+
+/* topLogoSection */
+.greenBg {  background: url(../images/top_green_bg.jpg) top center repeat-x;   }
+#topLogoSection {
+  display: block; height: 132px; position: relative;
+  .logo {
+    background: url(../images/pua_sprite.png) 0 -24px no-repeat;   width: 444px; height: 132px; display: block; top: 0; left: -100px; position: absolute; padding-left: 100px;
+    img {float: left; margin-right: 10px;margin-top: 10px;}
+    h1 {color: white; font: 32px/122px TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; text-shadow:-1px -1px 0 #405229; float: left;}
+  }
+  .topNavigation {
+    right: 0; position: absolute; top: 85px;
+    ul {}
+    ul li {float: left; padding: 10px 0;}    
+    ul li a {color: $textgrey; padding: 0 6px; border-right: 1px solid $textgrey; float: left; line-height: 12px;
+      &:hover {color:white;}
+    }
+    ul li:last-child a {border: medium none;}
+    ul li span.login {@include icon(13px,16px,-943px -23px); float: left; margin: -4px 5px 0 0;}
+    ul li .studentsLogin {@include roundcorners(); background-color: #2d2d2d; position: absolute; top: 30px; right: 0; padding: 15px 10px;  text-shadow:-1px -1px 0 #000; z-index: 2; width: 190px;}
+    ul li .studentsLogin label,
+    ul li .studentsLogin input { float: left; clear: both; margin: 0 0 10px;}
+    ul li .studentsLogin label {color: white;}
+    ul li .studentsLogin button {float: right; clear: both;}
+    ul li .studentsLogin a {color: $orange; float: left; clear: both; padding: 3px 0;}
+    ul li .studentsLogin a.cancel {color: $lightgrey}
+    ul li.active {background-color: #2d2d2d; @include roundcorners(); padding-bottom: 20px; }
+    ul li.active>a {color: white;}
+  }
+}
+
+/*mainNavigation*/
+#mainNavigation {
+  height: 46px;
+ a {
+  float: left; color: $green; font-weight: 600; padding: 0 7px; line-height: 46px; border-left:1px solid transparent; border-right:1px solid transparent;
+  &:hover {background-color:white; border-left:1px solid #cccccc; border-right:1px solid #cccccc; }
+  &.current {background-color:white; border-left:1px solid #cccccc; border-right:1px solid #cccccc; }
+ } 
+}
+ 
+
+
+
 
