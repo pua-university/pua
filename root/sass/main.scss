@@ -20,6 +20,20 @@ a {
   &:hover {text-decoration:underline;}
   &:visited {color: $green;}
 }
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
 @mixin icon($width, $height, $bgposition) {
   display: block;
   text-indent: -9999px;
@@ -40,6 +54,7 @@ a {
   -moz-transition: all $time ease-in-out;  
   -o-transition: all $time ease-in-out;
 }
+
 
 /*containers*/
 .fullWidthWrapper {width: 100%;}
@@ -93,10 +108,10 @@ a {
     ul {}
     ul li {float: left; padding: 10px 0;}    
     ul li a {color: $textgrey; padding: 0 6px; border-right: 1px solid $textgrey; float: left; line-height: 12px;
-      &:hover {color:white;}
+      &:hover {color:white; text-decoration: none;}
     }
     ul li:last-child a {border: medium none;}
-    ul li span.login {@include icon(13px,16px,-943px -23px); float: left; margin: -4px 5px 0 0;}
+    ul li span.login {@include icon(13px,16px,-943px -24px); float: left; margin: -4px 5px 0 0;}
     ul li .studentsLogin {@include roundcorners(); background-color: #2d2d2d; position: absolute; top: 30px; right: 0; padding: 15px 10px;  text-shadow:-1px -1px 0 #000; z-index: 2; width: 190px;}
     ul li .studentsLogin label,
     ul li .studentsLogin input { float: left; clear: both; margin: 0 0 10px;}
@@ -114,7 +129,7 @@ a {
   height: 46px;
  a {
   float: left; color: $green; font-weight: 600; padding: 0 7px; line-height: 46px; border-left:1px solid transparent; border-right:1px solid transparent;
-  &:hover {background-color:white; border-left:1px solid #cccccc; border-right:1px solid #cccccc; }
+  &:hover {background-color:white; border-left:1px solid #cccccc; border-right:1px solid #cccccc; text-decoration: none;}
   &.current {background-color:white; border-left:1px solid #cccccc; border-right:1px solid #cccccc; }
  } 
 }
@@ -182,8 +197,56 @@ a.viewAll {color: $orange; float: right; font-weight: bold; line-height: 8px; wi
 
 
 /*partners*/
-.ourPartners {float: left; width: 100%;}
+/*global style*/
+.greyWrapper {@include roundcorners(); border:1px solid #c0c0c0; background-color: #eff1e5; padding:10px; }
+/*partners styles*/
+.ourPartners {
+  float: left; width: 100%; margin-top: 30px; position: relative;
+  .partnersLogos {margin-left: 40px;}
+  h2 {color:$lightgrey; text-shadow:1px 1px 0 #f7f7f7;}
+  ul li {margin: 0 15px;}
+  ul li figure {width:145px; height: 120px; }
+  ul li figure img {width: 100%; height: 100%;}
+  button {border: medium none; position: absolute; top: 80px; box-shadow: 0 0 0 transparent;}
+  button.logosPrevious {@include icon(35px, 96px, -585px -22px); left: 10px;
+    &:hover{background-position:-549px -22px;}
+  }
+  button.logosNext {@include icon(35px, 96px, -621px -22px); right: 10px;
+    &:hover{background-position:-657px -22px;}
+  }
+}
+
+/*footer styles*/
+#footer{
+  background: $green url(../images/footer-bg.jpg) repeat-x top center; margin-top: 50px; padding-top: 40px;
+  .wrapper_960 { position: relative;}
+  .footerList {float: left; width: auto; margin-right: 25px;}
+  ul {width: 100%; margin-bottom: 20px;}
+  ul li {padding-left:20px; background: url(../images/pua_sprite.png) no-repeat -942px -134px; margin: 3px 0;}
+  ul li.title, ul li.title a {color: #bababa; font-weight: 600; margin-bottom: 16px; padding:0; background: transparent none; }
+  ul li a {color: white;
+    &:hover {color:$orange;}
+  }
+
+  /*social profiles*/
+  .puaSocialProfile {float: right; background: url(../images/footer-logo-bg.png) -6px -14px no-repeat; width: 186px;}
+  .followUs {@include icon(163px,59px, -657px -122px); text-align: center; color: white; font-size: 18px; text-transform: uppercase; position: absolute; top: -47px; right: 12px; text-indent: 0; text-shadow:-1px -1px 0 $textgrey; line-height: 37px;}
+  .footerLogo {width: 100%; text-align: center; display: block;padding-top: 30px;}
+  .puaSocialProfile{
+    ul {width: 80%; margin-left: 10%;}
+    ul li {background: transparent none; float: left; width: 100%; margin:3px 0;}
+    ul li a {width: 100%; line-height: 22px;}
+    ul li .icon {margin-right: 5px;}
+    ul li .icon, ul li a {float: left;}
+    .facebook {@include icon(21px,21px,-830px -107px);}
+    .twitter {@include icon(21px,21px,-852px -107px);}
+  }
+}
 
 
 
-
+/*copyright*/
+#footer{
+  .copyRight {width:100%; display: block; height: 30px; text-align: center; color: white; background-color: $orange; overflow: hidden; line-height: 30px;}
+  .copyRight a {font-weight: bold;}
+}
