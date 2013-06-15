@@ -156,11 +156,11 @@ h2.subTitle { font-size: 18px; color: #444444; width: 100%; margin-bottom: 5px; 
 .newsCarousel ul li a { float: left; margin-bottom: 10px; }
 .newsCarousel ul li a:hover { color: #ff5f24; }
 .newsCarousel ul li a:hover figure { border-color: #ff5f24; }
-.newsCarousel ul li a:hover h2 { color: #ff5f24; }
+.newsCarousel ul li a:hover h2, .newsCarousel ul li a:hover p { color: #ff5f24; }
 .newsCarousel ul li figure { margin-right: 10px; width: 26%; height: 95px; text-align: center; border: 1px solid #797979; padding: 3px; background-color: white; }
 .newsCarousel ul li figure img { width: 100%; height: 100%; }
 .newsCarousel ul li article { width: 68%; }
-.newsCarousel ul li article p { height: 58px; margin-top: 10px; overflow: auto; }
+.newsCarousel ul li article p { height: 58px; margin-top: 10px; overflow: auto; color: #444444; }
 
 a.viewAll { color: #ff5f24; float: right; font-weight: bold; line-height: 8px; width: 100%; border-bottom: 5px solid #dfe0d7; text-align: right; padding: 5px 0; }
 a.viewAll .icon { width: 0px; height: 0px; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid #ff5f24; float: right; margin-left: 4px; }
@@ -175,7 +175,7 @@ a.viewAll .icon { width: 0px; height: 0px; border-top: 5px solid transparent; bo
 .services ul li.academicRules span.icon { display: block; text-indent: -9999px; overflow: hidden; width: 68px; height: 78px; background-image: url(../images/pua_sprite.png); background-position: -866px -20px; background-repeat: no-repeat; background-color: transparent; border: medium none; }
 .services ul li a { height: 100%; float: left; }
 .services ul li a:hover { text-decoration: none; }
-.services ul li p { margin: 20px 5px; }
+.services ul li p { margin: 20px 5px; color: #444444; }
 .services ul li h3:before { content: ""; background-color: #dfe0d7; position: absolute; display: block; width: 100%; height: 5px; bottom: 0; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; z-index: -1; opacity: 0.9; }
 .services ul li:hover { cursor: pointer; }
 .services ul li:hover h3:before { height: 230px; }

@@ -160,15 +160,16 @@ h2.subTitle {font-size: 18px; color: $textgrey; width: 100%; margin-bottom: 5px;
   ul li {border-bottom: 1px solid $subbordercolor; margin: 0 0 10px;}
   ul li figure, ul li article {float: left; }
   ul li a {float: left; margin-bottom: 10px; 
-    &:hover{ color: $orange;
+    &:hover{ 
+      color: $orange;
       figure {border-color: $orange;}
-      h2 {color: $orange;}
+      h2, p {color: $orange;}
     }
   }
   ul li figure {margin-right: 10px;width:26%; height:95px; text-align: center; border: 1px solid $formborder; padding: 3px; background-color: white;}
   ul li figure img {width: 100%; height: 100%;}
   ul li article {width: 68%}
-  ul li article p {height:58px; margin-top: 10px;overflow: auto;}
+  ul li article p {height:58px; margin-top: 10px;overflow: auto; color: $textgrey;}
 }
 
 a.viewAll {color: $orange; float: right; font-weight: bold; line-height: 8px; width: 100%; border-bottom: 5px solid $subbordercolor; text-align: right;padding: 5px 0;
@@ -186,7 +187,7 @@ a.viewAll {color: $orange; float: right; font-weight: bold; line-height: 8px; wi
   ul li.academicRules span.icon {@include icon(68px, 78px, -866px -20px);}
   ul li a {height: 100%; float: left;}
   ul li a:hover {text-decoration: none;}
-  ul li p {margin: 20px 5px; }
+  ul li p {margin: 20px 5px; color: $textgrey; }
   /*animated background on hover*/
   ul li h3:before {
     content: ""; background-color: $subbordercolor; position: absolute; display: block; width:100%; height: 5px; bottom: 0; @include transtion(0.5s); z-index: -1; opacity: 0.9;
