@@ -306,4 +306,68 @@ a.viewAll {color: $orange; float: right; font-weight: bold; line-height: 8px; wi
 
 
 
+/*inners*/
+/*inner banner*/
+#pageBanner {
+  position: relative; margin-bottom: 1px;
+  figure {height:156px;}
+  figure img {width: 100%; height: 100%;}
+  p {
+    position: absolute; width: 370px; height: 156px; background-color: rgba(255,255,255,0.6); top: 0; right: 0;
+    span {text-shadow:1px 1px 0 #f7f7f7; color: $green; font-weight: bolder;font-size: 22px; width: 80%; margin: 0 auto; display: block; margin-top: 50px; }
+  }
+}
+
+/*services in inner pages*/
+#innerServices {
+  background-color: #cad09c; height: 54px; line-height: 54px; color:$green; text-shadow:1px 1px 0 #f7f7f7;
+  h1 {font-size: 18px;  font-weight: bolder; padding:0 14px; float: left;}
+  .mediaGallery .icon {@include icon(36px,28px,-822px -187px); margin-top: 4px;}
+  .internationalActivities .icon {@include icon(39px,39px,-866px -182px);}
+  .academicRules .icon {@include icon(33px,37px,-913px -181px);}
+  .icon {margin-right: 5px;}
+  a, span {float: left;}
+  a {
+    color:$textgrey; border-left:1px solid #9ca57a; line-height: 40px; padding: 5px 10px 0; margin-top: 4px; font-size: 14px;
+    &:hover {color:$orange;}
+  }
+}
+
+/*news rotator*/
+#newsRotator {
+  background-color: #e6e9db; height: 28px; line-height: 28px;
+  h2, span, p {font-size: 12px; float: left; display: inline; width: auto;}
+  h2, span {color: $orange; margin-right: 5px;}
+  p {color:$textgrey;}
+  span {
+    &:before{content:"["; font-weight: bold;}
+    &:after{content:"]:"; font-weight: bold;}
+  }
+  h2 {max-width:200px; margin-left: 10px; font-weight: bold;}
+  p {max-width: 600px;}
+  h2,p { overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+  &:hover { 
+    h2, span {color:$green;}
+    p {color:$orange;}
+  }
+}
+
+/*side navigation for faculties*/
+#sideNavigation {
+   float: left;
+  .allFaculties>li { 
+    font-size: 14px; font-weight: 500;margin-bottom: 1px; background-color: $green; border-left: 10px solid #012c2b; width:160px;  padding: 6px 10px; position: relative; line-height: 16px;
+    a { color:white; display: block; }
+    &:hover {background-color: #012C2B;}
+    &.current {
+      &:after {content:""; border-left: 10px solid transparent;    border-right: 10px solid transparent;    border-top: 10px solid white; position: absolute; right: 10px; top: 15px;}
+    }
+  }
+  .facultyLinks {float: left; width: 190px; margin-left: -20px; margin-top: 6px; position: relative; z-index: 1; margin-bottom: 6px;}
+  .facultyLinks li {
+    float:left; background-color: #ebf0f0; border-left:10px solid #c4d4d4; padding: 6px 0 6px 10px; font-size: 12px; border-bottom:1px solid #b3bbb5; width: 170px; 
+    a {color: $textgrey; font-size: 12px; display: block;}
+    &.current, &:hover {background-color: #ffd7bf; border-left-color: #ffac7a;}
+  }
+}
 
