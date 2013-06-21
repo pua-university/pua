@@ -334,7 +334,7 @@ a.viewAll .icon { width: 0px; height: 0px; border-top: 5px solid transparent; bo
 #facultiesBriefList .faculty a.more .icon { border-left-color: #444444; }
 
 /*rtl fixes*/
-[dir="rtl"] #innerServices h1, [dir="rtl"] #innerServices a, [dir="rtl"] #innerServices span, [dir="rtl"] #newsRotator h2, [dir="rtl"] #newsRotator span, [dir="rtl"] #newsRotator p, [dir="rtl"] #sideNavigation, [dir="rtl"] #sideNavigation .facultyLinks { float: right; }
+[dir="rtl"] #innerServices h1, [dir="rtl"] #innerServices a, [dir="rtl"] #innerServices span, [dir="rtl"] #newsRotator h2, [dir="rtl"] #newsRotator span, [dir="rtl"] #newsRotator p, [dir="rtl"] #sideNavigation, [dir="rtl"] #sideNavigation .facultyLinks, [dir="rtl"] #facultiesBriefList .faculty h3 .icon { float: right; }
 
 [dir="rtl"] #innerServices .icon { margin-left: 5px; margin-right: 0; }
 
@@ -351,3 +351,11 @@ a.viewAll .icon { width: 0px; height: 0px; border-top: 5px solid transparent; bo
 [dir="rtl"] #sideNavigation .facultyLinks li { border-left: medium none; border-right: 10px solid #C4D4D4; padding: 6px 10px 6px 0; }
 
 [dir="rtl"] #sideNavigation .facultyLinks li:hover, [dir="rtl"] #sideNavigation .facultyLinks li.current { border-right: 10px solid #ffac7a; }
+
+[dir="rtl"] .mainPageContent { float: right; margin-right: 10px; margin-left: 0; }
+
+[dir="rtl"] #facultiesBriefList .faculty h3 .icon { background-position: 10px -15px; }
+
+[dir="rtl"] #facultiesBriefList .faculty .description { border: medium none; border-right: 10px solid #DFE0D7; padding: 0; padding-right: 10px; margin: 10px 12px 10px 0; }
+
+[dir="rtl"] #facultiesBriefList .faculty a.more .icon { border-right-color: #444444; border-left: medium none; }
