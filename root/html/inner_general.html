@@ -114,10 +114,10 @@
 
       <div class="wrapper_960 clearfix" id="breadCrumb">
         <a href="#">Home</a>
-        <a href="#" class="current">Home</a>
+        <a href="javascript:void(0);" class="current">Home</a>
       </div>
 
-      <div class="wrapper_960" id="pageContent">
+      <div class="wrapper_960 clearfix" id="pageContent">
        
         <div class="facultiesLinks" id="sideNavigation">
           <ul class="allFaculties">
@@ -137,6 +137,35 @@
           </ul>
         </div>
 
+        <div class="mainPageContent" id="facultiesBriefList">
+          <h2 class="title">More Services</h2>
+          <div class="faculty">
+            <h3 class="L-viewFullDescription"><span class="icon"></span>Faculty of Pharmacy</h3>
+            <div class="description">
+              some Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
+              <span class="fullDescription">Full Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. </span>
+            </div>
+            <a href="javascript:void(0);" class="viewAll L-viewFullDescription more">More Details<span class="icon"></span></a>
+          </div>
+
+          <div class="faculty">
+            <h3 class="L-viewFullDescription"><span class="icon"></span>Faculty of Pharmacy</h3>
+            <div class="description">
+              some Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
+              <span class="fullDescription">Full Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. </span>
+            </div>
+            <a href="javascript:void(0);" class="viewAll L-viewFullDescription more">More Details<span class="icon"></span></a>
+          </div>
+
+        </div>
 
       </div> <!-- /end .pageContent -->
 
@@ -255,6 +284,21 @@
       $('.L-cancelLogin').on('click', function(event){
         $(this).parents('.studentsLogin').hide();
         $(this).parents('li').removeClass('active');
+      })
+
+      //click on faculty title to view all description
+      $('h3.L-viewFullDescription').on('click', function(event){
+        var descpSpan = $(this).next('.description').find('span');
+        $(descpSpan).slideDown();
+        $(this).siblings('a.more').removeClass('more').html("View Faculty Details <span class='icon' />");
+        $(this).parent('.faculty').addClass('active');
+      })
+      //view full faculty description
+      $('a.L-viewFullDescription').on('click', function(event){
+        $(this).removeClass('more').html("View Faculty Details <span class='icon' />");
+        var descpSpan = $(this).parent('.faculty').find('.description span');
+        $(descpSpan).slideDown();
+        $(this).parent('.faculty').addClass('active');
       })
 
     </script>

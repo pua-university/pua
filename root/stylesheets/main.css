@@ -136,7 +136,7 @@ p.slider-caption { display: block; width: 96%; margin: 0; padding: 4% 2%; positi
 /*horizontal separator*/
 span.horizontalSep { display: block; text-indent: -9999px; overflow: hidden; width: 950px; height: 11px; background-image: url(../images/pua_sprite.png); background-position: 0 0; background-repeat: no-repeat; background-color: transparent; border: medium none; margin-top: 1px; margin-bottom: 20px; }
 
-/*news and services general styles*/
+/* general styles*/
 .twoColumns { width: 470px; }
 
 .news { float: left; }
@@ -303,10 +303,11 @@ a.viewAll .icon { width: 0px; height: 0px; border-top: 5px solid transparent; bo
 #breadCrumb { background-color: #dfe0d7; line-height: 26px; margin-bottom: 20px; }
 #breadCrumb a { float: left; background: url(../images/breadcrumb-arrows.png) no-repeat right top; line-height: 26px; color: #444444; padding: 0 20px 0 12px; text-shadow: 1px 1px 0 #f7f7f7; }
 #breadCrumb a.current { background: transparent none; font-weight: bold; }
+#breadCrumb a.current:hover { color: #444444; text-decoration: none; }
 #breadCrumb a:hover { color: #ff5f24; text-decoration: underline; }
 
 /*side navigation for faculties*/
-#sideNavigation { float: left; }
+#sideNavigation { float: left; width: 190px; }
 #sideNavigation .allFaculties > li { font-size: 14px; font-weight: 500; margin-bottom: 1px; background-color: #004443; border-left: 10px solid #012c2b; width: 160px; padding: 6px 10px; position: relative; line-height: 16px; }
 #sideNavigation .allFaculties > li a { color: white; display: block; }
 #sideNavigation .allFaculties > li:hover { background-color: #012C2B; }
@@ -315,6 +316,22 @@ a.viewAll .icon { width: 0px; height: 0px; border-top: 5px solid transparent; bo
 #sideNavigation .facultyLinks li { float: left; background-color: #ebf0f0; border-left: 10px solid #c4d4d4; padding: 6px 0 6px 10px; font-size: 12px; border-bottom: 1px solid #b3bbb5; width: 170px; }
 #sideNavigation .facultyLinks li a { color: #444444; font-size: 12px; display: block; }
 #sideNavigation .facultyLinks li.current, #sideNavigation .facultyLinks li:hover { background-color: #ffd7bf; border-left-color: #ffac7a; }
+
+/*mainPageContent*/
+.mainPageContent { width: 760px; margin-left: 10px; float: left; }
+.mainPageContent .title { margin-bottom: 5px; }
+
+#facultiesBriefList .faculty { float: left; clear: both; width: 100%; margin-bottom: 1px; }
+#facultiesBriefList .faculty h3 { font-size: 18px; color: #004443; text-shadow: 0.5px 0.866px 0px white; line-height: 40px; border-bottom: 1px solid #e6e9db; background-color: #bec3b4; }
+#facultiesBriefList .faculty h3 .icon { display: block; text-indent: -9999px; overflow: hidden; width: 15px; height: 40px; background-image: url(../images/pua_sprite.png); background-position: 10px 15px; background-repeat: no-repeat; background-color: transparent; border: medium none; background-image: url(../images/green-bigarrow.png); float: left; padding: 0 10px; }
+#facultiesBriefList .faculty h3:hover { cursor: pointer; }
+#facultiesBriefList .faculty .description { font-size: 12px; line-height: 14px; color: #444444; margin: 10px 0; border-left: 10px solid #dfe0d7; margin-left: 12px; padding-left: 10px; }
+#facultiesBriefList .faculty .description span { display: none; }
+#facultiesBriefList .faculty.active h3 { background-color: #fcfdf4; }
+#facultiesBriefList .faculty.active h3 .icon { background-image: url(../images/down-bigarrow.png); }
+#facultiesBriefList .faculty.active .description { border-color: #fccdb2; }
+#facultiesBriefList .faculty a.more { color: #444444; }
+#facultiesBriefList .faculty a.more .icon { border-left-color: #444444; }
 
 /*rtl fixes*/
 [dir="rtl"] #innerServices h1, [dir="rtl"] #innerServices a, [dir="rtl"] #innerServices span, [dir="rtl"] #newsRotator h2, [dir="rtl"] #newsRotator span, [dir="rtl"] #newsRotator p, [dir="rtl"] #sideNavigation, [dir="rtl"] #sideNavigation .facultyLinks { float: right; }

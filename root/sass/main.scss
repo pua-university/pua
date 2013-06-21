@@ -144,7 +144,7 @@ a {
 span.horizontalSep {@include icon(950px, 11px, 0 0); margin-top: 1px; margin-bottom: 20px;}
 
 
-/*news and services general styles*/
+/* general styles*/
 .twoColumns {width: 470px;}
 .news {float: left;}
 .services {float: right;}
@@ -154,6 +154,7 @@ h2.title {
 }
 h2.subTitle {font-size: 18px; color: $textgrey; width: 100%; margin-bottom: 5px; text-transform: capitalize; }
 .smallText {color:$lightgrey;}
+
 
 /*news*/
 .newsCarousel{
@@ -356,14 +357,16 @@ a.viewAll {color: $orange; float: right; font-weight: bold; line-height: 8px; wi
 #breadCrumb {
   background-color: #dfe0d7; line-height: 26px; margin-bottom: 20px;
   a {float: left; background: url(../images/breadcrumb-arrows.png) no-repeat right top; line-height: 26px; color: $textgrey;  padding: 0 20px 0 12px; text-shadow:1px 1px 0 #f7f7f7;
-  &.current { background: transparent none; font-weight: bold;}
+  &.current { background: transparent none; font-weight: bold;
+    &:hover {color:$textgrey; text-decoration: none;}
+  }
   &:hover {color:$orange; text-decoration: underline;};
   }
 }
 
 /*side navigation for faculties*/
 #sideNavigation {
-   float: left;
+   float: left; width: 190px;
   .allFaculties>li { 
     font-size: 14px; font-weight: 500;margin-bottom: 1px; background-color: $green; border-left: 10px solid #012c2b; width:160px;  padding: 6px 10px; position: relative; line-height: 16px;
     a { color:white; display: block; }
@@ -377,6 +380,29 @@ a.viewAll {color: $orange; float: right; font-weight: bold; line-height: 8px; wi
     float:left; background-color: #ebf0f0; border-left:10px solid #c4d4d4; padding: 6px 0 6px 10px; font-size: 12px; border-bottom:1px solid #b3bbb5; width: 170px; 
     a {color: $textgrey; font-size: 12px; display: block;}
     &.current, &:hover {background-color: #ffd7bf; border-left-color: #ffac7a;}
+  }
+}
+
+/*mainPageContent*/
+.mainPageContent {  width: 760px; margin-left: 10px; float: left;
+  .title {margin-bottom: 5px;}
+}
+#facultiesBriefList {
+  .faculty {float: left; clear: both; width: 100%;margin-bottom: 1px;}
+  .faculty h3 { font-size: 18px;  color: $green;  text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 ); line-height: 40px; border-bottom: 1px solid #e6e9db; background-color: #bec3b4;
+    .icon {@include icon(15px,40px, 10px 15px); background-image: url(../images/green-bigarrow.png); float: left; padding: 0 10px;}
+    &:hover {cursor: pointer;}
+  }
+  .faculty .description {font-size: 12px; line-height: 14px; color: $textgrey; margin: 10px 0; border-left:10px solid #dfe0d7; margin-left: 12px;padding-left: 10px; 
+    span {display: none;}
+  }
+  .faculty.active{
+    h3 {background-color: #fcfdf4;}
+    h3 .icon {background-image: url(../images/down-bigarrow.png);}
+    .description {border-color: #fccdb2;}
+  }
+  .faculty a.more {color: $textgrey; 
+    .icon {border-left-color:$textgrey;}
   }
 }
 
