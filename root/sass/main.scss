@@ -385,7 +385,7 @@ a.viewAll {color: $orange; float: right; font-weight: bold; line-height: 8px; wi
 
 /*mainPageContent*/
 .mainPageContent {  width: 760px; margin-left: 10px; float: left;
-  .title {margin-bottom: 5px;}
+  .title {margin-bottom: 20px;}
 }
 #facultiesBriefList {
   .faculty {float: left; clear: both; width: 100%;margin-bottom: 1px;}
@@ -430,6 +430,74 @@ a.viewAll {color: $orange; float: right; font-weight: bold; line-height: 8px; wi
 
 [dir="rtl"] .mainPageContent {float: right; margin-right: 10px; margin-left: 0;}
 [dir="rtl"] #facultiesBriefList .faculty h3 .icon {background-position: 10px -15px;}
+[dir="rtl"] #facultiesBriefList .faculty.active h3 .icon { background-image: url(../images/down-bigarrow.png); background-position: 10px 15px;}
+[dir="rtl"] #facultiesBriefList .faculty.active .description {border-color: #fccdb2;}
 [dir="rtl"] #facultiesBriefList .faculty .description {border: medium none; border-right: 10px solid #DFE0D7; padding: 0; padding-right:10px; margin:10px 12px 10px 0; }
 [dir="rtl"] #facultiesBriefList .faculty a.more .icon {border-right-color:$textgrey; border-left: medium none;}
+
+
+/*faculties detailed page*/
+#facultyDetailsContainer {
+  .deanMessage {width: 100%; float: left; margin-bottom: 20px;}
+  .deanMessage .figure { margin-right: 10px; width: 260px; height: 190px; text-align: center; border: 1px solid #797979; padding: 3px; background-color: white; float: left; 
+    img {width: 100%; height: 100%;}
+  }
+  .deanMessage .text {float: left; width: 480px;
+    .subTitle {color: $green; margin-bottom: 18px; }
+    p {max-height: 160px;overflow: hidden;}
+  }
+
+  /*columnsWrapper*/
+  .columnsWrapper {width: 100%; float: left;}
+  .mainColumn {width: 470px; margin-right: 10px; float: left;}
+
+  /*Activities*/
+  .studentsActivities, .internationActSection {margin-top: 10px; float: left; width: 100%;}
+
+  .studentsActivities {
+    ul {float: left; margin-bottom: 10px;}
+    ul li {width: 470 / 3 - 10px; float: left; height: 160px; position: relative; margin-right: 10px;
+      img {width: 100%; height: 100%;}
+      .activityTitle {position: absolute; bottom: 0; left: 0; width: 80%; height: 45px; color: $green; font-size: 18px; background-color: rgba(255,255,255,0.8); padding: 5% 10%; line-height: 24px; overflow: hidden;}
+    }
+  }
+
+  .internationActSection {
+    h2 .icon { @include icon(31px, 31px, -775px -188px); float: left; margin-right: 10px;}
+    .figure { margin-right: 10px; width: 210px; height: 90px; text-align: center; border: 1px solid #797979; padding: 3px; background-color: white; float: left; 
+      img {width: 100%; height: 100%;}
+    }
+    .text {float: left; width: 240px;
+      .subTitle {color: $green; margin-bottom: 18px; }
+      p {max-height: 160px;overflow: hidden;}
+    }
+  }
+
+
+  /*facultyDepartments*/
+  .facultyDepartments {float: right; width: 250px; 
+    &.greyWrapper {padding: 0 10px 10px;}
+    h2 {color: $textgrey; text-shadow:1px 1px 0 #fff;}
+
+    ul.mainDept {list-style-type: square; list-style-position: inside; 
+      li, li a  {font-weight: bold; line-height: 18px; color: $textgrey; text-shadow:1px 1px 0 #fff;}
+      li a{ /*text-decoration: underline;*/
+        &:hover {color: $orange;}
+      }
+    }
+    ul.mainDept ul.subDept {list-style-type: none;
+      li {border-left:5px solid #d7d8d0; margin-left: 15px; padding-left: 5px;}
+      li, li a {font-weight: normal; }
+    }
+
+    a.downloadBrochure {width: 100%; display: block; color: #909090; font-size: 24px; text-shadow:1px 1px 0 #fff; font-weight: bold; line-height: 28px; margin-top: 24px;
+      .icon { @include icon(90px, 86px, 0 0); background-image: url(../images/download-pua-brochure.png); float: left; margin-right: 5px;}
+    }
+  }
+}
+
+
+
+
+
 
