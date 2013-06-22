@@ -397,3 +397,14 @@ a.viewAll .icon { width: 0px; height: 0px; border-top: 5px solid transparent; bo
 #facultyDetailsContainer .facultyDepartments ul.mainDept ul.subDept li, #facultyDetailsContainer .facultyDepartments ul.mainDept ul.subDept li a { font-weight: normal; }
 #facultyDetailsContainer .facultyDepartments a.downloadBrochure { width: 100%; display: block; color: #909090; font-size: 24px; text-shadow: 1px 1px 0 #fff; font-weight: bold; line-height: 28px; margin-top: 24px; }
 #facultyDetailsContainer .facultyDepartments a.downloadBrochure .icon { display: block; text-indent: -9999px; overflow: hidden; width: 90px; height: 86px; background-image: url(../images/pua_sprite.png); background-position: 0 0; background-repeat: no-repeat; background-color: transparent; border: medium none; background-image: url(../images/download-pua-brochure.png); float: left; margin-right: 5px; }
+
+/*rtl fixes*/
+[dir="rtl"] #facultyDetailsContainer .deanMessage .figure, [dir="rtl"] #facultyDetailsContainer .deanMessage .text, [dir="rtl"] #facultyDetailsContainer .mainColumn, [dir="rtl"] #facultyDetailsContainer .studentsActivities ul li, [dir="rtl"] #facultyDetailsContainer .internationActSection h2 .icon, [dir="rtl"] #facultyDetailsContainer .internationActSection .figure, [dir="rtl"] #facultyDetailsContainer .facultyDepartments a.downloadBrochure .icon { float: right; }
+
+[dir="rtl"] #facultyDetailsContainer .facultyDepartments { float: left; }
+
+[dir="rtl"] #facultyDetailsContainer .deanMessage .figure, [dir="rtl"] #facultyDetailsContainer .mainColumn, [dir="rtl"] #facultyDetailsContainer .internationActSection .figure, [dir="rtl"] #facultyDetailsContainer .internationActSection h2 .icon { margin: 0 0 0 10px; }
+
+[dir="rtl"] #facultyDetailsContainer .facultyDepartments ul.mainDept ul.subDept li { border-right: 5px solid #D7D8D0; border-left: medium none; margin: 0 15px 0 0; padding: 0 5px 0 0; }
+
+[dir="rtl"] #facultyDetailsContainer .facultyDepartments a.downloadBrochure .icon { margin: 0 0 0 5px; }

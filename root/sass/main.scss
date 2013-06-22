@@ -496,6 +496,24 @@ a.viewAll {color: $orange; float: right; font-weight: bold; line-height: 8px; wi
   }
 }
 
+/*rtl fixes*/
+[dir="rtl"] #facultyDetailsContainer .deanMessage .figure,
+[dir="rtl"] #facultyDetailsContainer .deanMessage .text,
+[dir="rtl"] #facultyDetailsContainer .mainColumn,
+[dir="rtl"] #facultyDetailsContainer .studentsActivities ul li ,
+[dir="rtl"] #facultyDetailsContainer .internationActSection h2 .icon,
+[dir="rtl"] #facultyDetailsContainer .internationActSection .figure,
+[dir="rtl"] #facultyDetailsContainer .facultyDepartments a.downloadBrochure .icon {float: right;}
+
+[dir="rtl"] #facultyDetailsContainer .facultyDepartments {float: left;}
+
+[dir="rtl"] #facultyDetailsContainer .deanMessage .figure,
+[dir="rtl"] #facultyDetailsContainer .mainColumn,
+[dir="rtl"] #facultyDetailsContainer .internationActSection .figure,
+[dir="rtl"] #facultyDetailsContainer .internationActSection h2 .icon {margin:0 0 0 10px;}
+
+[dir="rtl"] #facultyDetailsContainer .facultyDepartments ul.mainDept ul.subDept li {    border-right: 5px solid #D7D8D0; border-left: medium none;    margin: 0 15px 0 0;    padding: 0 5px 0 0;}
+[dir="rtl"] #facultyDetailsContainer .facultyDepartments a.downloadBrochure .icon {margin:0 0 0 5px;}
 
 
 
